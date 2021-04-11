@@ -65,3 +65,7 @@ yarn add bootstrap --dev
 # Markdown conversation
 
 https://github.com/KnpLabs/KnpMarkdownBundle
+
+# Check what we can change on a certain bundle
+
+php bin/console config:dump KnpMarkdownBundle
