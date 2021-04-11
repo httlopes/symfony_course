@@ -12,7 +12,7 @@ https://flex.symfony.com/
 
 # Place to check twig
 
-https://twig.symfony.com/
+https:/#/twig.symfony.com/
 
 # Check all recipes installed
 
@@ -53,4 +53,13 @@ php bin/console debug:autowiring twig
 # Install webpack
 
 composer require encore
+
+# Yarn - its the same thing as composer but for node
+
+### Get Jquery from yarn
+
+yarn add jquery --dev
+
+yarn add bootstrap --dev
+
 

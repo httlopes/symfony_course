@@ -56,10 +56,3 @@
         </ul>
     </div>
 {% endblock %}
-
-{% block javascripts %}
-    {# parent() means that we wont override the default one on base.html.twig and also will also be using those ones included there before our script in this page #}
-    {{ parent() }}
-
-    <script src="{{ asset('js/question_show.js') }}"></script>
-{% endblock %}
