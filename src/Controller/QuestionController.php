@@ -14,7 +14,7 @@ class QuestionController extends AbstractController
     #[Route('/', name: 'homepage')]
     public function homepage(): Response
     {
-        return new Response('Whatever dude');
+        return $this->render('question/homepage.html.twig');
     }
 
     /**
@@ -32,9 +32,10 @@ class QuestionController extends AbstractController
 
 
         return $this->render('question/show.html.twig', [
-            'question'  => ucwords(str_replace('-', ' ', $slug)),
-            'answers'   => $answers
+            'question' => ucwords(str_replace('-', ' ', $slug)),
+            'answers' => $answers
         ]);
+
         //return new Response('Future page to show a question');
     }
 }
