@@ -35,3 +35,8 @@ composer require debug
 # Check all routes
 
 php bin/console debug:router
+
+# Specific router info
+
+php bin/console router:match /comments/10/vote/up php bin/console router:match /comments/10/vote/up --method=POST <- method needed in case this of its specific, otherwise error
+

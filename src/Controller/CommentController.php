@@ -9,7 +9,12 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class CommentController extends AbstractController
 {
-    #[Route('/comments/{id}/vote/{direction}', name: 'comment')]
+    /**
+     * @param $id
+     * @param $direction
+     * @return Response
+     */
+    #[Route('/comments/{id}/vote/{direction<up|down>}', name: 'comment', methods: ['POST'])]
     public function commentVote($id, $direction): Response
     {
         //todo use id to query database
