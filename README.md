@@ -40,3 +40,11 @@ php bin/console debug:router
 
 php bin/console router:match /comments/10/vote/up php bin/console router:match /comments/10/vote/up --method=POST <- method needed in case this of its specific, otherwise error
 
+# Call all Symfony services we might need in future (cache, loggers, etc)
+
+php bin/console debug:autowiring
+
+# Check for a specific service (eg log)
+
+php bin/console debug:autowiring log
+
