@@ -21,7 +21,7 @@ class QuestionController extends AbstractController
      * @param $slug
      * @return Response
      */
-    #[Route('/questions/{slug}', name: 'questions')]
+    #[Route('/questions/{slug}', name: 'question_show')]
     public function show($slug): Response
     {
         $answers = [
